@@ -852,12 +852,13 @@ h1.page-header {
 }
 
 .login-panel > .panel-heading {
-    color: #fff;
-    background-color: #30a5ff;
-    border-color: #30a5ff;
     padding: 10px 30px;
+    font-weight: bold;
+    font-size: 32px;
+    height: 90px;
+    line-height: 90px;
 }
 
 .login-panel > .panel-body {
-    padding: 45px 30px;
+    padding: 40px 30px;
 }
