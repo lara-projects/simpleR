@@ -846,3 +846,18 @@ h1.page-header {
 .fixed-table-pagination .pagination-detail {
 	margin-top: 20px;
 }
+
+.login-panel {
+    margin-top: 80px;
+}
+
+.login-panel > .panel-heading {
+    color: #fff;
+    background-color: #30a5ff;
+    border-color: #30a5ff;
+    padding: 10px 30px;
+}
+
+.login-panel > .panel-body {
+    padding: 45px 30px;
+}
