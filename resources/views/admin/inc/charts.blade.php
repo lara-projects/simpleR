@@ -4,6 +4,11 @@
 Charts
 @endsection
 
+@section("hnav")
+    @parent
+    <a href="" class="btn btn-sm btn-warning">Chart'dan</a>
+@endsection
+
 @section("content")
 
 <div class="row">
