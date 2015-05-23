@@ -1,5 +1,7 @@
 <?php namespace SimpleR\Http\Controllers\Admin;
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
 use SimpleR\Http\Requests;
 use SimpleR\Http\Controllers\Controller;
@@ -25,6 +27,17 @@ class IndexController extends Controller {
     public function index()
     {
         return View::make("admin.inc.index");
+    }
+
+    /**
+     * Logout işlemi.
+     * @return mixed
+     */
+    public function logout()
+    {
+        Auth::logout();
+
+        return Redirect::to("admin");
     }
 
 

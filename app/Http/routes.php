@@ -29,7 +29,7 @@ Route::get('login', 'Auth\AuthController@getLogin');
 Route::get('kayit', 'Auth\AuthController@getRegister');
 
 // Çıkış
-Route::get("logout", 'Auth\AuthController@getLogout');
+Route::get("logout", 'Admin\IndexController@logout');
 
 /** ----------------------------------------------------------------------
  * ADMIN
