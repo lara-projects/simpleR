@@ -8,21 +8,14 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller {
 
+    /**
+     * Auth
+     */
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-
-    /**
-     * Login sayfası için.
-     *
-     * Kayıt kontrol vs işlemleri halledilince gerekli
-     * yönlendirmeler eklenecek. Şimdilik sadece login
-     * sayfasını getiriyor.
-     *
-     * URL: /login
-     */
 
     /**
      * Admin Index sayfası.
@@ -33,8 +26,6 @@ class IndexController extends Controller {
     {
         return View::make("admin.inc.index");
     }
-
-
 
 
     /** ------------------------------------------------------------------
