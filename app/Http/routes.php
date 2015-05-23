@@ -16,6 +16,9 @@
  * ADMIN
  ---------------------------------------------------------------------- */
 
+// Login.
+Route::get("login", "AdminIndexController@login");
+
 // Admin anasayfa.
 Route::get('admin', 'AdminIndexController@index');
 
@@ -33,8 +36,3 @@ Route::get('admin/panels', 'AdminIndexController@panels');
 Route::get('admin/tables', 'AdminIndexController@tables');
 
 Route::get('admin/widgets', 'AdminIndexController@widgets');
-
-Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);
