@@ -11,14 +11,6 @@
 
             <a class="navbar-brand" href="{{ url("/admin") }}"><span>{{ env("SITE_NAME", "SimpleR") }}</span> | Admin Paneli</a>
 
-            <div class="">
-                @section("hnav")
-                    <a href="" class="btn btn-sm btn-danger">Silinecek</a>
-                    <a href="" class="btn btn-sm btn-default">Ana Header'dan</a>
-                    <a href="" class="btn btn-sm btn-default">Charts'a git</a>
-                @show
-            </div>
-
             <ul class="user-menu">
                 <li class="dropdown pull-right">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
