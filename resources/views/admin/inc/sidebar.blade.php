@@ -5,12 +5,13 @@
         </div>
     </form>
     <ul class="nav menu">
-        <li class="active"><a href="inc/index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-        <li><a href="inc/widgets.html"><span class="glyphicon glyphicon-th"></span> Widgets</a></li>
-        <li><a href="inc/charts.html"><span class="glyphicon glyphicon-stats"></span> Charts</a></li>
-        <li><a href="inc/tables.html"><span class="glyphicon glyphicon-list-alt"></span> Tables</a></li>
-        <li><a href="inc/forms.html"><span class="glyphicon glyphicon-pencil"></span> Forms</a></li>
-        <li><a href="inc/panels.html"><span class="glyphicon glyphicon-info-sign"></span> Alerts &amp; Panels</a></li>
+        <li class="active"><a href="{{ url('admin') }}"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
+        </li>
+        <li><a href="{{ url('admin/widgets') }}"><span class="glyphicon glyphicon-th"></span> Widgets</a></li>
+        <li><a href="{{ url('admin/charts') }}"><span class="glyphicon glyphicon-stats"></span> Charts</a></li>
+        <li><a href="{{ url('admin/tables') }}"><span class="glyphicon glyphicon-list-alt"></span> Tables</a></li>
+        <li><a href="{{ url('admin/forms') }}"><span class="glyphicon glyphicon-pencil"></span> Forms</a></li>
+        <li><a href="{{ url('admin/panels') }}"><span class="glyphicon glyphicon-info-sign"></span> Alerts &amp; Panels</a></li>
         <li class="parent ">
             <a href="#">
                 <span class="glyphicon glyphicon-list"></span> Dropdown <span data-toggle="collapse" href="#sub-item-1"
@@ -36,7 +37,7 @@
             </ul>
         </li>
         <li role="presentation" class="divider"></li>
-        <li><a href="inc/login.html"><span class="glyphicon glyphicon-user"></span> Login Page</a></li>
+        <li><a href="{{ url('login') }}"><span class="glyphicon glyphicon-user"></span> Login Page</a></li>
     </ul>
 </div>
 <!--/.sidebar-->

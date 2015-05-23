@@ -13,4 +13,14 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('/admin', 'AdminIndexController@index');
+Route::get('admin', 'AdminIndexController@index');
+
+Route::get('admin/charts', 'AdminChartsController@index');
+
+Route::get('admin/forms', 'AdminFormsontroller@index');
+
+Route::get('admin/panels', 'AdminPanelsController@index');
+
+Route::get('admin/tables', 'AdminTablesController@index');
+
+Route::get('admin/widgets', 'AdminWidgetsController@index');

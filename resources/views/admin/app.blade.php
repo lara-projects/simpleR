@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    @include('admin.head')
+    @include('admin.inc.head')
 </head>
 <body>
-@include('admin.header')
-@include('admin.sidebar')
+@include('admin.inc.header')
+@include('admin.inc.sidebar')
 
 @yield('content')
 
-@include('admin.footer')
+@include('admin.inc.footer')
 </body>
 
 </html>
