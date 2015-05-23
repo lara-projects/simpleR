@@ -17,7 +17,7 @@ Route::get('admin', 'AdminIndexController@index');
 
 Route::get('admin/charts', 'AdminChartsController@index');
 
-Route::get('admin/forms', 'AdminFormsontroller@index');
+Route::get('admin/forms', 'AdminFormsController@index');
 
 Route::get('admin/panels', 'AdminPanelsController@index');
 
