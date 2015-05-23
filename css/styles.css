@@ -616,11 +616,11 @@ a.bg-danger:hover {
 /*Breadcrumbs*/
 
 .breadcrumb {
-	border-radius: 0;
-	padding: 10px 15px;
-	background: #e9ecf2;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-	margin: 0 ;
+    border-radius: 30px;
+    padding: 10px 15px;
+    background: #e9ecf2;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    margin: 20px 10px;
 }
 
 h1.page-header {
