@@ -1,7 +1,7 @@
 @extends("admin.base")
 
 @section("title")
-Forms
+Tables
 @endsection
 
 @section("content")
