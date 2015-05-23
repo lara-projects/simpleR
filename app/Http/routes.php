@@ -24,14 +24,16 @@ Route::controllers([
 // Login.
 Route::get('login', 'Auth\AuthController@getLogin');
 
+// TODO: İleride çıkarılması lazım.
 // Register
 Route::get('kayit', 'Auth\AuthController@getRegister');
+
+// Çıkış
+Route::get("logout", 'Auth\AuthController@getLogout');
 
 /** ----------------------------------------------------------------------
  * ADMIN
  ---------------------------------------------------------------------- */
-
-
 
 // Admin anasayfa.
 Route::get('admin', 'Admin\IndexController@index');
