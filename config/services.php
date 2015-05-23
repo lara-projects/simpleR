@@ -31,6 +31,7 @@ return [
 
 	'stripe' => [
 		'model'  => 'SimpleR\User',
+		'key' => '',
 		'secret' => '',
 	],
 
