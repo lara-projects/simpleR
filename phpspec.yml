@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: SimpleR
+        psr4_prefix: SimpleR
+        src_path: app
