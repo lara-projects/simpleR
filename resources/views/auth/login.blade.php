@@ -1,61 +1,58 @@
-@extends('app')
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel Login</title>
 
-@section('content')
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
 <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
-				<div class="panel-body">
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
 
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login') }}">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+    <div class="row">
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading text-center">Admin Giriş</div>
+                <div class="panel-body">
+                    <form role="form" action="{{ url('/auth/login') }}" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="E-mail adresiniz." name="email" type="email"
+                                       autofocus="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Şifreniz." name="password" type="password">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="remember" type="checkbox">Beni Hatırla
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Oturum Aç</button>
 
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
-						</div>
+                                    <a class="btn btn-link" href="{{ url('/password/email') }}">Şifremi Unuttum</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- Login Panel -->
 
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" name="remember"> Remember Me
-									</label>
-								</div>
-							</div>
-						</div>
+        </div>
+        <!-- /.col-->
 
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">Login</button>
-
-								<a class="btn btn-link" href="{{ url('/password/email') }}">Forgot Your Password?</a>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+    </div>
+    <!-- /.row -->
 </div>
-@endsection
+
+</body>
+
+</html>
+

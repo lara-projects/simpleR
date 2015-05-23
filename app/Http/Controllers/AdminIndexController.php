@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class AdminIndexController extends Controller {
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 
     /**
      * Login sayfası için.
@@ -18,10 +23,6 @@ class AdminIndexController extends Controller {
      *
      * URL: /login
      */
-    public function login()
-    {
-        return View::make("login");
-    }
 
     /**
      * Admin Index sayfası.
