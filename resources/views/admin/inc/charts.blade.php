@@ -4,6 +4,9 @@
 Charts
 @endsection
 
+@section("headCss")
+@endsection
+
 @section("content")
 
 <div class="row">

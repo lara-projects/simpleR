@@ -10,6 +10,10 @@
 <script src="{{ asset('js/easypiechart.js') }}"></script>
 <script src="{{ asset('js/easypiechart-data.js') }}"></script>
 <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
+
+{{-- --}}
+@yield("footerJs")
+
 <script type="text/javascript">
     $('#calendar').datepicker({});
 
