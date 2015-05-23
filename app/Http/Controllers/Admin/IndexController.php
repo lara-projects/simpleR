@@ -1,4 +1,4 @@
-<?php namespace SimpleR\Http\Controllers;
+<?php namespace SimpleR\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\View;
 use SimpleR\Http\Requests;
@@ -6,7 +6,7 @@ use SimpleR\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 
-class AdminIndexController extends Controller {
+class IndexController extends Controller {
 
 
     /**

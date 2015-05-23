@@ -17,22 +17,22 @@
  ---------------------------------------------------------------------- */
 
 // Login.
-Route::get("login", "AdminIndexController@login");
+Route::get('login', 'Admin\IndexController@login');
 
 // Admin anasayfa.
-Route::get('admin', 'AdminIndexController@index');
+Route::get('admin', 'Admin\IndexController@index');
 
 
 /** ----------------------------------------------------------------------
  * ADMIN GEÇİCİ
 ---------------------------------------------------------------------- */
 
-Route::get('admin/charts', 'AdminIndexController@charts');
+Route::get('admin/charts', 'Admin\IndexController@charts');
 
-Route::get('admin/forms', 'AdminIndexController@forms');
+Route::get('admin/forms', 'Admin\IndexController@forms');
 
-Route::get('admin/panels', 'AdminIndexController@panels');
+Route::get('admin/panels', 'Admin\IndexController@panels');
 
-Route::get('admin/tables', 'AdminIndexController@tables');
+Route::get('admin/tables', 'Admin\IndexController@tables');
 
-Route::get('admin/widgets', 'AdminIndexController@widgets');
+Route::get('admin/widgets', 'Admin\IndexController@widgets');
